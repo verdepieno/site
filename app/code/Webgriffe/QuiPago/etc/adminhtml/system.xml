@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="payment">
+            <group id="quipago" translate="label" sortOrder="1000" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>QuiPago Payment Gateway</label>
+                <field id="title" translate="label comment" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Title</label>
+                    <validate>required-entry</validate>
+                    <comment>
+                        <![CDATA[The name of the payment method that will be shown in the frontend.]]>
+                    </comment>
+                </field>
+                <field id="active" type="select" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="test" type="select" translate="label comment" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Test Mode Enabled</label>
+                    <comment>
+                        <![CDATA[If Test Mode is enabled a fixed amount of <span style='font-family:monospace;color:blue'>1.00</span> will be used. <strong style='color:red;'>PAY ATTENTION: don't keep Test Mode enabled in a Production Environment.</strong>]]>
+                    </comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="active">1</field>
+                    </depends>
+                </field>
+                <field id="production_gateway_url" translate="label comment" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Payment Page URL (production)</label>
+                    <validate>required-entry validate-url</validate>
+                    <comment>
+                        <![CDATA[The URL of the payment page in production environment.<br/>It should be <span style='font-family:monospace;color:blue'>https://ecommerce.keyclient.it/ecomm/ecomm/DispatcherServlet</span>.]]>
+                    </comment>
+                    <depends>
+                        <field id="active">1</field>
+                        <field id="test">0</field>
+                    </depends>
+                </field>
+                <field id="test_gateway_url" translate="label comment" sortOrder="31" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Payment Page URL (test)</label>
+                    <validate>required-entry validate-url</validate>
+                    <comment>
+                        <![CDATA[The URL of the payment page in test environment.<br/>It should be <span style='font-family:monospace;color:blue'>https://coll-ecommerce.keyclient.it/ecomm/ecomm/DispatcherServlet</span>.]]>
+                    </comment>
+                    <depends>
+                        <field id="active">1</field>
+                        <field id="test">1</field>
+                    </depends>
+                </field>
+                <field id="production_merchant_alias" translate="label comment" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Merchant Alias (production)</label>
+                    <validate>required-entry</validate>
+                    <comment>
+                        <![CDATA[This value is provided by Key Client upon contract activation.]]>
+                    </comment>
+                    <depends>
+                        <field id="active">1</field>
+                        <field id="test">0</field>
+                    </depends>
+                </field>
+                <field id="test_merchant_alias" translate="label comment" sortOrder="41" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Merchant Alias (test)</label>
+                    <validate>required-entry</validate>
+                    <comment>
+                        <![CDATA[Test environment Merchant Alias. It should be <span style='font-family:monospace;color:blue'>payment_3444153</span>.]]>
+                    </comment>
+                    <depends>
+                        <field id="active">1</field>
+                        <field id="test">1</field>
+                    </depends>
+                </field>
+                <field id="production_mac_key" translate="label comment" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>MAC Calculation Secret Key (production)</label>
+                    <validate>required-entry</validate>
+                    <comment>
+                        <![CDATA[This value is provided by Key Client upon contract activation.]]>
+                    </comment>
+                    <depends>
+                        <field id="active">1</field>
+                        <field id="test">0</field>
+                    </depends>
+                </field>
+                <field id="test_mac_key" translate="label comment" sortOrder="51" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>MAC Calculation Secret Key (test)</label>
+                    <validate>required-entry</validate>
+                    <comment>
+                        <![CDATA[Test environment MAC Key. It should be <span style='font-family:monospace;color:blue'>TLGHTOWIZXQPTIZRALWKG</span>.]]>
+                    </comment>
+                    <depends>
+                        <field id="active">1</field>
+                        <field id="test">1</field>
+                    </depends>
+                </field>
+                <field id="language" translate="label" type="select" sortOrder="55" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Payment Page Language</label>
+                    <source_model>Webgriffe\QuiPago\Model\Config\Source\Languages</source_model>
+                    <comment>
+                        <![CDATA[The language to use on the QuiPago payment page.]]>
+                    </comment>
+                    <depends>
+                        <field id="active">1</field>
+                    </depends>
+                </field>
+                <field id="payment_action" translate="label" type="select" sortOrder="58" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Payment Action</label>
+                    <source_model>Webgriffe\QuiPago\Model\Config\Source\PaymentAction</source_model>
+                    <comment>
+                        <![CDATA[Choose if payment done with this payment method should be considered as authorized only or authorized and captured. This option should be set accordingly with authorization/capture mode of QuiPago gateway chosen during contract activation.]]>
+                    </comment>
+                    <depends>
+                        <field id="active">1</field>
+                    </depends>
+                </field>
+                <field id="hashing_method" type="select" translate="label" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Encryption Method (for MAC code)</label>
+                    <comment>
+                        <![CDATA[The encryption algorithm used to calculate the security MAC code. If you don't know which to choose, ask to Key Client.]]>
+                    </comment>
+                    <source_model>Webgriffe\QuiPago\Model\Config\Source\HashingMethods</source_model>
+                    <depends>
+                        <field id="active">1</field>
+                    </depends>
+                </field>
+                <field id="cancel_on_failure" type="select" translate="label" sortOrder="65" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Cancel Order on Failure</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>
+                        <![CDATA[If set to 'Yes' the order will be canceled if payment fails.]]>
+                    </comment>
+                    <depends>
+                        <field id="active">1</field>
+                    </depends>
+                </field>
+                <field id="debug" type="select" translate="label" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Debug</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>
+                        <![CDATA[If set to 'Yes' enables additional logging.]]>
+                    </comment>
+                </field>
+                <field id="allowspecific" translate="label" type="allowspecific" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Payment From Applicable Countries</label>
+                    <source_model>Magento\Payment\Model\Config\Source\Allspecificcountries</source_model>
+                </field>
+                <field id="specificcountry" translate="label" type="multiselect" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Payment From Specific Countries</label>
+                    <source_model>Magento\Directory\Model\Config\Source\Country</source_model>
+                </field>
+                <field id="min_order_total" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Minimum Order Total</label>
+                </field>
+                <field id="max_order_total" translate="label" type="text" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Maximum Order Total</label>
+                </field>
+                <field id="sort_order" translate="label" type="text" sortOrder="120" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Sort Order</label>
+                    <frontend_class>validate-number</frontend_class>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

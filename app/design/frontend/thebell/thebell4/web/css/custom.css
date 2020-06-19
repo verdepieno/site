@@ -1,0 +1,3 @@
+.product-item-name a, .product.name a a, .catalog-product-view .product-info-main .page-title {
+	text-transform: none !important;
+}

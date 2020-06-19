@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <featureproductslider>
+            <new_status>
+                <enabled>1</enabled>
+				<items>9</items>
+				<row>3</row>
+				<speed>1000</speed>
+				<qty>8</qty>
+				<addtocart>1</addtocart>
+				<wishlist>1</wishlist>
+				<compare>0</compare>
+				<navigation>0</navigation>
+				<pagination>1</pagination>
+            </new_status>
+        </featureproductslider>
+    </default>
+</config>

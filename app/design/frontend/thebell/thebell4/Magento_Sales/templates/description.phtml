@@ -1,0 +1,14 @@
+<?php $_order = $block->getOrder() ?>
+<?php
+$payment = $_order->getPayment();
+$method = $payment->getMethodInstance();
+$methodTitle = $method->getTitle();
+$code = $method->getCode();
+
+if ($code == 'banktransfer'): ?>
+	<p>Grazie per l'ordine. La spedizione delle merce viene effettuata dopo il pagamento del bonifico. Una volta che il pacco viene spedito riceverai una mail di conferma. In seguito riceverai anche una mail dal corriere con la quale potrai seguire l'iter del trasporto.</p>
+	<p>Per ogni domanda riguardante il tuo ordine contattaci all'indirizzo <a href="mailto:servizioclienti@verdepieno.com">servizioclienti@verdepieno.com</a>.</p>
+<?php else: ?>
+	<p>Grazie per l'ordine. Una volta che il pacco viene spedito riceverai una mail di conferma. In seguito riceverai anche una mail dal corriere con la quale potrai seguire l'iter del trasporto.</p>
+	<p>Per ogni domanda riguardante il tuo ordine contattaci all'indirizzo <a href="mailto:servizioclienti@verdepieno.com">servizioclienti@verdepieno.com</a>.</p>
+<?php endif; ?>

@@ -1,0 +1,44 @@
+
+
+<div class="main-container col2-left-layout">
+	
+	<div class="container-inner">
+		<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('static1_home4')->toHtml(); ?>
+		
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Bestsellerproduct\Block\Bestsellerproduct')->setTemplate('Plazathemes_Bestsellerproduct::bestsellerproduct.phtml')->toHtml();?>
+		
+		<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('categorytab_static_home4')->toHtml(); ?>
+		
+		<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('static2_home4')->toHtml(); ?>
+	</div>
+	
+	<div class="container-inner">
+		<div class="gruod-iner">
+			<div class="row">
+				
+				<div class="col-md-4 col-sm-12 col-xs-12 ">
+					<?php echo $block->getLayout()->createBlock('Plazathemes\Testimonial\Block\Testimonial')->setTemplate('Plazathemes_Testimonial::testimonial.phtml')->toHtml();?>
+				</div>
+				<div class="col-md-4 col-sm-12 col-xs-12 ">
+					<?php echo $block->getLayout()->createBlock('Plazathemes\Featureproductslider\Block\Featureproductslider')->setTemplate('Plazathemes_Featureproductslider::featureproductslider.phtml')->toHtml();?>
+				</div>
+				<div class="col-md-4 col-sm-12 col-xs-12 ">
+					<?php echo $block->getLayout()->createBlock('Plazathemes\Newproductslider\Block\Newproductslider')->setTemplate('Plazathemes_Newproductslider::newproductslider.phtml')->toHtml();?>
+					
+				</div>
+				
+			</div>
+		</div>
+		
+		
+	</div>
+	
+	
+	<div class="bran">
+		<div class="container-inner">
+			<?php echo $block->getLayout()->createBlock('Plazathemes\Brandslider\Block\Brandslider')->setTemplate('Plazathemes_Brandslider::brandslider.phtml')->toHtml();?>
+		</div>	
+	</div>
+</div>
+
+
