@@ -1,0 +1,24 @@
+# 2020-06-19 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
+# http://stackoverflow.com/questions/987142
+# http://stackoverflow.com/questions/9162919
+# http://stackoverflow.com/questions/8024924#comment15884195_8025106
+*
+!*/
+!/.editorconfig
+!/.gitignore
+!/composer.json
+!/readme.md
+!/app/code/**/*
+!/app/design/frontend/thebell/thebell4/**/*
+!/app/etc/config.php
+/update/dev
+/update/var
+/dev
+/vendor/codeception
+/vendor/liquid/liquid/examples
+/vendor/liquid/liquid/tests
+/vendor/magento/framework/Test
+/vendor/magento/magento2-base
+/vendor/magento/magento2-functional-testing-framework
+/vendor/mpdf
+/vendor/tubalmartin

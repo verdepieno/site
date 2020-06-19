@@ -1,0 +1,96 @@
+<?php $block->renderFileLessToCss(); ?>
+<header class="header-container">
+		<div class="header-iner">
+			<div class="h-left">
+				<?php echo $this->getChildHtml("logo"); ?>
+			</div>
+			<div class="h-right">
+				<?php echo $this->getChildHtml("hozmegamenu_top"); ?>
+				
+				<div class="absolute">
+					<div class="search-switcher">
+						<?php echo $this->getChildHtml("top.search"); ?>
+					</div>
+					<div class="link-hover clearfix">
+						<p class="icon"></p>
+						<div>
+							<?php echo $this->getChildHtml("store_language"); ?>
+							<div class="my-acount">
+								<strong class="label"><span><?php /* @escapeNotVerified */ echo __('My Account') ?></span></strong>
+								<?php echo $this->getChildHtml("top.links"); ?>
+							</div>
+							<?php echo $this->getChildHtml("currency"); ?>
+							
+							
+						</div>
+					</div>
+					<?php echo $this->getChildHtml("minicart");?>
+				</div>
+			</div>
+		</div>
+		<div class="nav-ozmegamenu-inner">
+			<div class="mobile-bar-icon"><span><?php /* @escapeNotVerified */ echo __('mobile icon'); ?></span></div>
+		</div>
+	
+		<div class="mobile-bar-content">
+			<div class ="mobile-bar-close"><?php /* @escapeNotVerified */ echo __('Close'); ?></div>
+			<ul class = "tabs-mobile">
+				<li class="item item-menu"><?php /* @escapeNotVerified */ echo __('Menu'); ?></li>
+				
+				<li class="item item-setting"><?php /* @escapeNotVerified */ echo __('Setting'); ?></li>
+			</ul>
+			<div class="tabs-content-mobile tabs-menu">
+				<?php echo $this->getChildHtml("mobilemenu"); ?>
+			</div>
+			<div class="tabs-content-mobile tabs-setting" style="display:none;">
+				<?php echo $this->getChildHtml("top.links"); ?>
+				<?php echo $this->getChildHtml("store_language_mobile"); ?>
+				<?php echo $this->getChildHtml("currency_mobile"); ?>
+			</div>
+		</div>
+</header>
+<script type="text/javascript">
+require(["jquery"], function($){
+	$(document).ready(function(){
+		<!-- show, hide mobile bar content -->
+		$(".mobile-bar-icon").click(function(){
+			$(".mobile-bar-content").addClass("open");
+		});
+		$(".mobile-bar-close").click(function(){
+			$(".mobile-bar-content").removeClass("open");
+		});
+		
+		<!-- choose tabs-->
+		$(".tabs-mobile .item-menu").addClass("active");
+		$(".tabs-mobile .item").click(function(){
+			$(".tabs-mobile .item").removeClass("active");
+			$(this).addClass("active");
+		});
+		$(".tabs-mobile .item-menu").click(function(){
+			$(".tabs-content-mobile").css("display","none");
+			$(".tabs-menu").css("display","block");
+		});
+		$(".tabs-mobile .item-account").click(function(){
+			$(".tabs-content-mobile").css("display","none");
+			$(".tabs-account").css("display","block");
+		});
+		$(".tabs-mobile .item-setting").click(function(){
+			$(".tabs-content-mobile").css("display","none");
+			$(".tabs-setting").css("display","block");
+		});
+		
+	});
+	
+	$(window).scroll(function () {
+	   if ($(this).scrollTop() > 160) {
+		 $('.header-container').addClass("fix-nav-ozmegamenu");
+	   } else {
+		$('.header-container').removeClass("fix-nav-ozmegamenu");
+	   }
+	});
+	
+});
+</script>
+
+
+

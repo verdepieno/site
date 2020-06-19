@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>  
+<bannerslider>
+<records>
+	<record> 
+		<name>custom design jewelry</name>
+		<title1>From concepr to work of art</title1>
+		<title2></title2>
+		<click_url>#</click_url> 
+		<image><![CDATA[Plazathemes/bannerslider/images/b/a/banner1_home1.jpg]]></image>
+		<description></description>
+		<order>1</order>
+		<store_id>1</store_id> 
+		<status>1</status> 
+	</record>
+	<record> 
+		<name>Womens jewelry</name>
+		<title1>Wide range of Fashion Jewelery <span> and Accessories</span></title1>
+		<title2></title2>
+		<click_url>#</click_url> 
+		<image><![CDATA[Plazathemes/bannerslider/images/b/a/banner2_home1.jpg]]></image>
+		<description></description>
+		<order>1</order>
+		<store_id>1</store_id> 
+		<status>1</status> 
+	</record>
+
+</records>
+</bannerslider>

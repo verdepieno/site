@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2017 Amasty (https://www.amasty.com)
+ * @package Amasty_Shiprules
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Shipping\Model\Shipping">
+        <plugin name="Amasty_Shiprules::Shipping" type="Amasty\Shiprules\Plugin\Shipping" />
+    </type>
+    <type name="Magento\Quote\Model\Quote\Config">
+        <plugin name="Amasty_Shiprules::ProductAttributes" type="Amasty\Shiprules\Plugin\ProductAttributes" />
+    </type>
+    <type name="Magento\Quote\Model\Quote\Address\Rate">
+        <plugin name="Amasty_Shiprules::ImportShippingRate" type="Amasty\Shiprules\Plugin\ImportShippingRate" />
+    </type>
+</config>

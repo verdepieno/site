@@ -1,0 +1,23 @@
+{
+    "name": "webgriffe/module-quipago",
+    "version": "1.1.0",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Webgriffe SRL",
+            "email": "support@webgriffe.com"
+        }
+    ],
+    "require": {
+        "webgriffe/lib-quipago": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webgriffe\\QuiPago\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

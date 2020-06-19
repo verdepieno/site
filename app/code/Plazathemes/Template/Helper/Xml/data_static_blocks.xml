@@ -1,0 +1,518 @@
+<?xml version="1.0"?>
+<thebell>
+    <blocks>
+	
+		<block>
+            <title>Contact us</title>
+            <identifier>contact_us</identifier>
+            <content>
+                    <![CDATA[
+						<div class="contact-us"><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6305.678625317825!2d-122.39957047637722!3d37.793805380191266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858063d63a0215%3A0xcba0af2dfe02048f!2s101+California+Street%2C+San+Francisco%2C+CA+94111%2C+Hoa+K%E1%BB%B3!5e0!3m2!1svi!2s!4v1419099932976" width="100%" height="350"></iframe></div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		<block>
+            <title>Footer Static</title>
+            <identifier>footer_static</identifier>
+            <content>
+                    <![CDATA[
+						<div class="footer-static row">
+						<div class="col-sm-4 col-xs ">
+						<div class="footer-static-title f-title1"><a class="logo" href="#"><img src="{{media url="wysiwyg/logo-footer.png"}}" alt="" /></a></div>
+						<div class="footer-static-content">
+						<div class="text">
+						<p>We are a team of designers and developers that</p>
+						<p>create high quality Magento, Prestashop, Opencart</p>
+						<p>themes and provide premium and dedicated</p>
+						<p>support to our products.</p>
+						</div>
+						<div class="Contact">
+						<div class="text">205 Arapahoe St, Schoenchen, KS 69696</div>
+						<div class="mail text1">Email:<span> Support@Plazathemes.com</span></div>
+						<div class="phone text1">Phone:<span> +1 123-456-6789</span></div>
+						</div>
+						</div>
+						</div>
+						<div class="col-sm-2 col-xs">
+						<div class="footer-static-title f-title2">
+						<h3>USEFUL LINKS</h3>
+						</div>
+						<div class="footer-static-content">
+						<ul>
+						<li class="first"><a href="{{store direct_url="privacy-policy-cookie-restriction-mode"}}">Privacy Policy</a></li>
+						<li><a href="sales/order/history/">Order History</a></li>
+						<li><a href="{{store direct_url="contacts/"}}">Contact Us</a></li>
+						<li><a href="#">Returns</a></li>
+						<li><a href="#">Return Policy</a></li>
+						<li class="last"><a href="#">Gift Vouchers</a></li>
+						</ul>
+						</div>
+						</div>
+						<div class="col-sm-2 col-xs">
+						<div class="footer-static-title f-title3">
+						<h3>FIND US ON</h3>
+						</div>
+						<div class="footer-static-content">
+						<ul class="link-follow">
+						<li class="first"><a class="twitter fa fa-twitter" title="Twitter" href="https://twitter.com/plazathemes"><span>twitter</span></a></li>
+						<li><a class="google fa fa-google-plus" title="Google" href="#"><span>google </span></a></li>
+						<li><a class="facebook fa fa-facebook" title="Facebook" href="https://www.facebook.com/plazathemes1"><span>facebook</span></a></li>
+						<li><a class="youtube fa fa-youtube" title="Youtube" href="https://www.youtube.com/user/plazathemes"><span>youtube </span></a></li>
+						<li><a class="flickr fa fa-flickr" title="Flickr" href="https://www.youtube.com/user/plazathemes"><span>Flickr </span></a></li>
+						<li><a class="fa fa-instagram" title="instagram" href="#"><span>instagram </span></a></li>
+						</ul>
+						</div>
+						</div>
+						<div class="col-sm-4 col-xs">
+						<div class="footer-static-title f-title4">
+						<h3>PRODUCT TAGS</h3>
+						</div>
+						<div class="footer-static-content">
+						<ul class="links">
+						<li><a href="#">Jewelry</a> <a href="#">Beautiful</a> <a href="#">Men's</a> <a href="#">Women's</a> <a href="#">Rings</a> <a href="#">Earrings</a> <a href="#">Pendants </a> <a href="#">Charms</a> <a href="#">Necklaces</a> <a href="#">Bracelets</a> <a href="#"> Watches</a> <a href="#"> Cufflinks</a></li>
+						</ul>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Hotline</title>
+            <identifier>hotline</identifier>
+            <content>
+                    <![CDATA[
+						<p><span class="pe-7s-call">(+1)866-540-3229</span> <strong>FREE Shipping on orders over $150</strong></p>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Footer payment</title>
+            <identifier>footer_payment</identifier>
+            <content>
+                    <![CDATA[
+						<p><img src="{{media url="wysiwyg/payment.png"}}" alt="" /></p>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Link Follow</title>
+            <identifier>link_follow</identifier>
+            <content>
+                    <![CDATA[
+						<ul class="link-follow">
+						<li class="first"><a class="twitter fa fa-twitter" title="Twitter" href="https://twitter.com/plazathemes"><span>twitter</span></a></li>
+						<li><a class="google fa fa-google-plus" title="Google" href="#"><span>google </span></a></li>
+						<li><a class="facebook fa fa-facebook" title="Facebook" href="https://www.facebook.com/plazathemes1"><span>facebook</span></a></li>
+						<li><a class="youtube fa fa-youtube" title="Youtube" href="https://www.youtube.com/user/plazathemes"><span>youtube </span></a></li>
+						<li><a class="flickr fa fa-flickr" title="Flickr" href="https://www.youtube.com/user/plazathemes"><span>Flickr </span></a></li>
+						</ul>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Footer Link Tag</title>
+            <identifier>footer_links_tag</identifier>
+            <content>
+                    <![CDATA[
+						<ul>
+						<li>
+						<h2>Mobiles:</h2>
+						<a href="#">Moto E</a> | <a href="#">Samsung Mobile</a> | <a href="#">Micromax Mobile</a> | <a href="#">Nokia Mobile</a> | <a href="#">HTC Mobile</a> | <a href="#">Sony Mobile</a> | <a href="#">Apple Mobile</a> | <a href="#">LG Mobile</a> | <a href="#">Karbonn Mobile</a> | <a href="#">Nokia Mobile</a> | <a href="#"> View all</a></li>
+						<li>
+						<h2>Camera:</h2>
+						<a href="#">Nikon Camera</a> | <a href="#">Canon Camera</a> | <a href="#">Sony Camera</a> | <a href="#">Samsung Camera</a> | <a href="#">Point shoot camera</a> | <a href="#">Camera Lens</a> | <a href="#">Camera Tripod</a> | <a href="#">Camera Bag</a> | <a href="#">Nokia Mobile</a> | <a href="#">View all</a></li>
+						<li>
+						<h2>Laptops:</h2>
+						<a href="#">Apple Laptop</a> | <a href="#">Acer Laptop</a> | <a href="#">Samsung Laptop</a> | <a href="#">Lenovo Laptop</a> | <a href="#">Sony Laptop</a> | <a href="#">Dell Laptop</a> | <a href="#">Asus Laptop</a> | <a href="#">Toshiba Laptop</a> | <a href="#">LG Laptop</a> | <a href="#">HP Laptop</a> | <a href="#">Notebook</a> | <a href="#">View all</a></li>
+						<li></li>
+						</ul>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Menu Links home1</title>
+            <identifier>pt_menu_links_home1</identifier>
+            <content>
+                    <![CDATA[
+						<div class="pt_menu_link pt_menu">
+						<div class="parentMenu">
+						<ul class="mobilemenu">
+						<li><a href="{{store url="blog"}}">Blog</a></li>
+						<li><a href="{{store url="contact"}}">Contact Us</a></li>
+						</ul>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Banner category home1 </title>
+            <identifier>banner_category_home1</identifier>
+            <content>
+                    <![CDATA[
+						<div class="block banner-category"><a href="{{store url="destop.html"}}"><img src="{{media url="wysiwyg/banner11.jpg"}}" alt="" /></a></div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>static1 home1</title>
+            <identifier>static1_home1</identifier>
+            <content>
+                    <![CDATA[
+						<div class="static1-home1">
+						<div class="img">
+						<div class="bos box1">
+						<div class="box-col"><a href="#"><img src="{{media url="wysiwyg/img1_top.jpg"}}" alt="" /></a></div>
+						<a class="text" href="{{store direct_url="smart-phone/apple-phones.html"}}">Pendants</a></div>
+						<div class="bos box2">
+						<div class="box-col"><a href="#"><img src="{{media url="wysiwyg/img2_top.jpg"}}" alt="" /></a></div>
+						<a class="text" href="{{store direct_url="smart-phone/motorola-phones.html"}}">Rings</a></div>
+						<div class="bos box3">
+						<div class="box-col"><a href="#"><img src="{{media url="wysiwyg/img3_top.jpg"}}" alt="" /></a></div>
+						<a class="text" href="{{store direct_url="smart-phone/samsung-phones.html"}}">Bracelets</a></div>
+						<div class="bos box4">
+						<div class="box-col"><a href="#"><img src="{{media url="wysiwyg/img4_top.jpg"}}" alt="" /></a></div>
+						<a class="text" href="{{store direct_url="destop/gaming-desktops.html"}}">Necklaces</a></div>
+						<div class="bos box5">
+						<div class="box-col"><a href="#"><img src="{{media url="wysiwyg/img5_top.jpg"}}" alt="" /></a></div>
+						<a class="text" href="{{store direct_url="smart-phone/apple-phones.html"}}">Earrings</a></div>
+						</div>
+						<div class="text-bottom">SALE ON SELECT TODD REED, ARMENTA, ADOLOFO COURRIER AND MORE. <a class="shop" href="{{store direct_url="smart-phone/smart-phone.html"}}">SHOP DENVER'S TOP JEWELRY BOUTIQUE</a></div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>static2 home1</title>
+            <identifier>static2_home1</identifier>
+            <content>
+                    <![CDATA[
+						<div class="static2-home1">
+						<div class="container-inner">
+						<div class="text">
+						<h2>TRUE PROMISE</h2>
+						<p class="text1">We believe everyone deserves the truth.</p>
+						<p class="text2">That's why we're bringing radical transparency to modernluxury by providing access to 100% authentic jewelry </p>
+						<p class="text3">and watches at a fraction of the retail price.</p>
+						<a class="shop" href="{{store direct_url="smart-phone.html"}}">
+						FIND OUT MORE
+						</a>
+						</div>
+						</div>	
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Menu Links home2</title>
+            <identifier>pt_menu_links_home2</identifier>
+            <content>
+                    <![CDATA[
+						<div class="pt_menu_link pt_menu">
+						<div class="parentMenu">
+						<ul class="mobilemenu">
+						<li><a href="{{store url="new-arrials"}}">New Arrials</a></li>
+						<li><a class="right" href="{{store url="contact"}}">Contact Us</a></li>
+						</ul>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>static1 home2</title>
+            <identifier>static1_home2</identifier>
+            <content>
+                    <![CDATA[
+						<div class="static1_home2">
+							<div class="row">
+								<div class="col-md-6 col-sm-12 col-xs-12 left">
+									<div class="box box1">
+										<div class="box-col">
+											<a href="{{store direct_url="shop-new.html"}}"> 
+												<img src="{{media url="wysiwyg/img1_static1.jpg"}}" alt="" /> 
+											</a>
+										</div>
+									</div>
+									<div class="box box2">
+										<div class="box-col">
+											<a href="{{store direct_url="women-s.html"}}">
+												<img src="{{media url="wysiwyg/img2_static1.jpg"}}" alt="" /> 
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-12 col-xs-12 right">
+									<div class="box box3">
+										<div class="box-col">
+											<a href="{{store direct_url="shop-new/dresses.html"}}">
+												<img src="{{media url="wysiwyg/img3_static1.jpg"}}" alt="" /> 
+											</a>
+										</div>
+									</div>
+									<div class="box box4">
+										<div class="box-col">
+											<a href="{{store direct_url="shop-new/dresses.html"}}">
+												<img src="{{media url="wysiwyg/img4_static1.jpg"}}" alt="" />
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>static2 home2</title>
+            <identifier>static2_home2</identifier>
+            <content>
+                    <![CDATA[
+						<div class="static2_home2">
+						<div class="container-inner">
+						<h3 class="ma-title">PRODUCT CATEGORIES <span class="text1">Variety of product categories, tens of products, only five-stars reviews.</span> <span>Browse the collections right now.</span></h3>
+						<div class="row">
+						<div class="col-md-4 col-sm-12 col-xs-12">
+						<div class="bos bos1">
+						<div class="box-iner"><a href="#"> <img src="{{media url="wysiwyg/img1_static2.jpg"}}" alt="" /> </a></div>
+						<div class="text"><a class="shop" href="{{store direct_url="shop-new/dresses.html"}}">Shop men</a></div>
+						</div>
+						</div>
+						<div class="col-md-4 col-sm-12 col-xs-12">
+						<div class="bos bos2">
+						<div class="box-iner"><a href="#"> <img src="{{media url="wysiwyg/img2_static2.jpg"}}" alt="" /> </a></div>
+						<div class="text"><a class="shop" href="{{store direct_url="shop-new/shoes.html"}}">Shop Kid</a></div>
+						</div>
+						</div>
+						<div class="col-md-4 col-sm-12 col-xs-12">
+						<div class="bos bos3">
+						<div class="box-iner"><a href="#"> <img src="{{media url="wysiwyg/img3_static2.jpg"}}" alt="" /> </a></div>
+						<div class="text"><a class="shop" href="{{store direct_url="shop-new/handbags.html"}}">Shop women</a></div>
+						</div>
+						</div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>pt menu links home3</title>
+            <identifier>pt_menu_links_home3</identifier>
+            <content>
+                    <![CDATA[
+						<div class="pt_menu_link pt_menu">
+						<div class="parentMenu">
+						<ul class="mobilemenu">
+						<li><a href="{{store direct_url="about-magento-demo-store"}}">About us</a></li>
+						<li><a class="right" href="{{store url="contact"}}">Contact Us</a></li>
+						</ul>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>static1 home3</title>
+            <identifier>static1_home3</identifier>
+            <content>
+                    <![CDATA[
+						<div class="static1_home3">
+						<div class="row box1">
+						<div class="col-md-6 col-sm-12 col-xs-12 ">
+						<div class="box-col">
+						<a href="{{store direct_url="living-room.html"}}">
+						<img src="{{media url="wysiwyg/bg_box1.jpg"}}" alt="" /> 
+						</a>
+						</div>
+						</div>
+						<div class="col-md-6 col-sm-12 col-xs-12 ">
+						<div class="box-iner">
+						<div class="text">
+						<h2>LOVESEAT SOFA</h2>
+						<p>Compact, Cozy and Comfortable</p>
+						<a class="shop" href="{{store direct_url="living-room.html"}}">More details</a>
+						</div>
+						</div>
+						</div>
+						</div>
+						<div class="row box2">
+						<div class="col-md-6 col-sm-12 col-xs-12 ">
+						<div class="box-iner">
+						<div class="text">
+						<h2>LOVESEAT SOFA</h2>
+						<p>Compact, Cozy and Comfortable</p>
+						<a class="shop" href="{{store direct_url="living-room.html"}}">More details</a>
+						</div>
+						</div>
+						</div>
+						<div class="col-md-6 col-sm-12 col-xs-12 ">
+						<div class="box-col">
+						<a href="{{store direct_url="living-room.html"}}">
+						<img src="{{media url="wysiwyg/bg_box2.jpg"}}" alt="" /> 
+						</a>
+						</div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>static2 home3</title>
+            <identifier>static2_home3</identifier>
+            <content>
+                    <![CDATA[
+						<div class="static2_home3">
+						<div class="container-inner">
+						<div class="text">
+						<h2 class="text1">Save 30% + Free Shipping</h2>
+						<h2>On select Table &amp; Decor</h2>
+						<a class="shop" href="{{store direct_url="living-room.html"}}">More details</a></div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>pt menu links home4</title>
+            <identifier>pt_menu_links_home4</identifier>
+            <content>
+                    <![CDATA[
+						<div class="pt_menu_link pt_menu">
+						<div class="parentMenu">
+						<ul class="mobilemenu">
+						<li><a href="{{store direct_url="about-magento-demo-store"}}">About us</a></li>
+						<li><a class="right" href="{{store url="contact"}}">Contact Us</a></li>
+						</ul>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>static1 home4</title>
+            <identifier>static1_home4</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-top-home4">
+						<div class="box1">
+						<div class="box-col">
+						<a href="#">
+						<img src="{{media url="wysiwyg/img1_home4.jpg"}}" alt="" />
+						</a>
+						</div>
+						<div class="text">
+						<a class="text-iner" href="{{store direct_url="electric.html"}}">
+						Steak Knives
+						</a>
+						<p>Knives</p>
+						</div>
+						</div>
+						<div class="box2">
+						<div class="box-col">
+						<a href="#"><img src="{{media url="wysiwyg/img2_home4.jpg"}}" alt="" /></a>
+						</div>
+						<div class="text">
+						<a class="text-iner" href="{{store direct_url="electric.html"}}">
+						Casseroles &amp; Dutch Ovens
+						</a>
+						<p>Cookware</p>
+
+						</div>
+						</div>
+						<div class="box3">
+						<div class="box-col">
+						<a href="#">
+						<img src="{{media url="wysiwyg/img3_home4.jpg"}}" alt="" />
+						</a>
+						</div>
+						<div class="text">
+						<a class="text-iner" href="{{store direct_url="grinder.html"}}">
+						Coffee Machines
+						</a>
+						<p>Appliances</p>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>categorytab static home4</title>
+            <identifier>categorytab_static_home4</identifier>
+            <content>
+                    <![CDATA[
+						<p>{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="SPECIAL OFFERS" identify="special_offrs" category_id="307,308,309,310,311" items_default="3" items_desktop="2" items_desktop_small="2" items_tablet="2" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="2" show_pager="1" template="categorytab/grid_top.phtml" page_var_name="psqflr"}}</p>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>static2 home4</title>
+            <identifier>static2_home4</identifier>
+            <content>
+                    <![CDATA[
+						<div class="static2-home4">
+						<div class="row">
+						<div class=" col-md-6 box1">
+						<div class="box-col">
+						<a href="{{store direct_url="shop.html"}}">
+						<img src="{{media url="wysiwyg/img1_static2_home4.jpg"}}" alt="" />
+						</a>
+						</div>
+						</div>
+						<div class="col-md-6 box2">
+						<div class="box-col">
+						<a href="{{store direct_url="electric.html"}}">
+						<img src="{{media url="wysiwyg/img2_static2_home4.jpg"}}" alt="" />
+						</a>
+						</div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+	
+    </blocks>
+</thebell>
+

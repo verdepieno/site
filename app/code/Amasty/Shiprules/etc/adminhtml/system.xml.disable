@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Amasty. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="amshiprules" translate="label" type="text" sortOrder="161809" showInDefault="1" showInWebsite="1" showInStore="1">
+            <resource>Amasty_Shiprules::config</resource>
+            <class>separator-top</class>
+            <label>Amasty Shipping Rules</label>
+            <tab>amasty</tab>
+            <group id="discount" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Discount Display</label>
+
+                <field id="show_discount" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Show both old and new rates</comment>
+                </field>
+                <field id="old_price_style" translate="label comment" type="text" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Old Price Style</label>
+                    <comment>For example: "text-decoration:line-through" without quotes.</comment>
+                    <depends>
+                        <field id="show_discount">1</field>
+                    </depends>
+                </field>
+                <field id="new_price_style" translate="label comment" type="text" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>New Price Style</label>
+                    <comment>For example: "color:red" without quotes.</comment>
+                    <depends>
+                        <field id="show_discount">1</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <quipago>
+                <title>QuiPago Payment Gateway</title>
+                <model>\Webgriffe\QuiPago\Model\PaymentMethod</model>
+                <production_gateway_url>https://ecommerce.keyclient.it/ecomm/ecomm/DispatcherServlet</production_gateway_url>
+                <test_gateway_url>https://coll-ecommerce.keyclient.it/ecomm/ecomm/DispatcherServlet</test_gateway_url>
+                <test_merchant_alias>payment_3444153</test_merchant_alias>
+                <test_mac_key>TLGHTOWIZXQPTIZRALWKG</test_mac_key>
+                <language>ITA</language>
+                <payment_action>authorize_capture</payment_action>
+                <hashing_method>sha1</hashing_method>
+            </quipago>
+        </payment>
+    </default>
+</config>
